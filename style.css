@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+/* CSS Boilerplate */
+:root {
+    --main-font: "Josefin Sans", sans-serif;
+    --logo-font: "Playwrite AU SA", cursive;
+    --white-color: hsl(0, 0%, 100%);
+    --dark-color: #1A2421
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: var(--main-font);
+}
+
+body {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+.sectionGap{
+    margin-top: 70px;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+header video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navBarLogo span {
+    font-family: var(--logo-font);
+    color: var(--dark-color);
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.csNavbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.insideCsNavbar {
+    width: 100%;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBarItems ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.navBarItems ul li a {
+    padding: 10px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navBarItems ul li:first-child {
+    margin-left: 0;
+}
+
+.navBarItems ul li:last-child {
+    margin-right: 0;
+}
+
+.navBarItems ul li a {
+    color: var(--dark-color);
+}
+
+.navBarButton a {
+    border: 1px solid var(--dark-color);
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: var(--dark-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navBarButton i {
+    transform: rotate(320deg)
+}
+
+.bannerText {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.insidebannerText {
+    width: 60%;
+    padding-left: 25px;
+}
+
+.insidebannerText h1 {
+    font-size: 72px;
+    font-weight: 600;
+    color: var(--white-color);
+    text-shadow:
+        -1px -1px 0 #000000b7,
+        1px -1px 0 #000000b7,
+        -1px 1px 0 #000000b7,
+        1px 1px 0 #000000b7;
+    margin-bottom: 30px;
+}
+
+.insidebannerText h6 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--white-color);
+    margin-bottom: 30px;
+    max-width: 85%;
+}
+
+.insidebannerText a {
+    /* padding: 10px 15px; */
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: #0F52BA;
+    background-color: var(--white-color);
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+}
